@@ -1,0 +1,138 @@
+body {
+  background-color: rgb(27, 35, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-width: 4px;
+  color: ghostwhite;
+}
+h1 {
+  color: ghostwhite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: ghostwhite;
+}
+a {
+  color: ghostwhite;
+  text-decoration: none;
+  margin-left: 15px;
+}
+label {
+  color: ghostwhite;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+input {
+  border-radius: 7px;
+  border-color: ghostwhite;
+  border-width: 3px;
+  color: ghostwhite;
+  width: 90%;
+  height: 18px;
+  font-size: 20px;
+  margin: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  background-color: rgb(22, 28, 33);
+}
+button {
+  color: ghostwhite;
+  background-color: rgb(31, 39, 46);
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 7px;
+  padding: 7px;
+  margin: 20px;
+  margin-left: 0px;
+  padding-left: 44%;
+  padding-right: 44%;
+}
+.container {
+  width: 70%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: rgb(31, 39, 46);
+  border-radius: 8px;
+}
+.flex-container {
+  display: flex;
+  gap: 30px;
+}
+.flex-container-child {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+.flex-container-child span {
+  margin-left: 15px;
+  color: red;
+  font-size: 15px;
+}
+.top-border {
+  display: flex;
+  justify-content: space-between;
+}
+.result-icon {
+  background-color: rgb(15, 20, 23);
+  border-radius: 22px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  margin-right: 20px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.badge-row {
+  display: flex;
+  gap: 10px;
+  margin-left: 2%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  margin: 3%;
+  margin-top: 1%;
+}
+.grid-item {
+  background-color: rgb(35, 43, 50);
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+.grid-item span {
+  color: rgb(90, 146, 158);
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container-child {
+    width: 100%;
+  }
+  .container {
+    width: 95%;
+  }
+  button {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  .badge-row {
+    flex-wrap: wrap;
+  }
+}

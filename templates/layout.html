@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" />
+    <title>IP and Subnet Calculator</title>
+  </head>
+  <body>
+    {% block content %} {%endblock content%}
+  </body>
+</html>
